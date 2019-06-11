@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="Demo.db::XSA_View" applyPrivilegeType="NONE" dataCategory="CUBE" schemaVersion="3.0" outputViewType="Aggregation" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="XSA_View"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="Demo.db::BwViewSynonym">
+    <resourceUri>Demo.db::BwViewSynonym</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="Demo.db::BwViewSynonym">
+  <attributes>
+    <attribute id="0REQTSN" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Request Transaction Sequence Number"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="0REQTSN"/>
+    </attribute>
+    <attribute id="YCOUNTRY" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Country"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="YCOUNTRY"/>
+    </attribute>
+    <attribute id="K_GS_AMT_CURRENCY" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="K_GS_AMT_CURRENCY"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="K_GS_AMT.CURRENCY"/>
+    </attribute>
+    <attribute id="K_NS_AMT_CURRENCY" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="K_NS_AMT_CURRENCY"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="K_NS_AMT.CURRENCY"/>
+    </attribute>
+    <attribute id="YORDERTYP__YORDERTYC" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Order Type Code"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="YORDERTYP__YORDERTYC"/>
+    </attribute>
+    <attribute id="K_OC_AMT_CURRENCY" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="K_OC_AMT_CURRENCY"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="K_OC_AMT.CURRENCY"/>
+    </attribute>
+    <attribute id="K_PC_AMT_CURRENCY" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="K_PC_AMT_CURRENCY"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="K_PC_AMT.CURRENCY"/>
+    </attribute>
+    <attribute id="YCUSTOMER__YLOC_CUST" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Local Customer"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="YCUSTOMER__YLOC_CUST"/>
+    </attribute>
+    <attribute id="YCUSTOMER__YREGION" order="16" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Region"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="YCUSTOMER__YREGION"/>
+    </attribute>
+    <attribute id="YCUSTOMER__YCITY" order="19" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="City"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="YCUSTOMER__YCITY"/>
+    </attribute>
+    <attribute id="YORD_S_BR" order="20" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Order Sales Brand"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="YORD_S_BR"/>
+    </attribute>
+    <attribute id="YORD_S_BR__YORDS_BRC" order="21" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Order Sales Brand Code"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="YORD_S_BR__YORDS_BRC"/>
+    </attribute>
+    <attribute id="YPRODUCT" order="22" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Product"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="YPRODUCT"/>
+    </attribute>
+    <attribute id="YPRODUCT__YBRAND" order="23" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Brand"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="YPRODUCT__YBRAND"/>
+    </attribute>
+    <attribute id="YPRODUCT__YPRODFAM" order="24" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Product Family"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="YPRODUCT__YPRODFAM"/>
+    </attribute>
+    <attribute id="YPRODUCT__YPRODGR1" order="25" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Product Group Level 1"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="YPRODUCT__YPRODGR1"/>
+    </attribute>
+    <attribute id="YPRODUCT__YPRODLVL4" order="26" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Product Level 4"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="YPRODUCT__YPRODLVL4"/>
+    </attribute>
+    <attribute id="YPRODUCT__YPRODLVL5" order="27" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Product Level 5"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="YPRODUCT__YPRODLVL5"/>
+    </attribute>
+    <attribute id="YPRODUCT__YPRODLVL6" order="28" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Product Level 6"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="YPRODUCT__YPRODLVL6"/>
+    </attribute>
+    <attribute id="YPRODUCT__YPRODTYPE" order="29" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Product Type"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="YPRODUCT__YPRODTYPE"/>
+    </attribute>
+    <attribute id="YPRODUCT__YPRODUCTC" order="30" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Product Code"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="YPRODUCT__YPRODUCTC"/>
+    </attribute>
+    <attribute id="YSALESPER" order="31" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Sales Person"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="YSALESPER"/>
+    </attribute>
+    <attribute id="YSALESTYP" order="32" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Sales Type"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="YSALESTYP"/>
+    </attribute>
+    <attribute id="YSALES_MS" order="33" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Sales Market Segment"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="YSALES_MS"/>
+    </attribute>
+    <attribute id="YSALES_MS__YSAL_MS_C" order="34" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Sales Market Segment code"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="YSALES_MS__YSAL_MS_C"/>
+    </attribute>
+    <attribute id="YSALES_MS___T" order="35" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="YSALES_MS___T"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="YSALES_MS___T"/>
+    </attribute>
+    <attribute id="YSALE_SEG" order="36" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Sales Segment"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="YSALE_SEG"/>
+    </attribute>
+    <attribute id="YSALE_SEG__YSALES_SC" order="37" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Sales Segment code"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="YSALE_SEG__YSALES_SC"/>
+    </attribute>
+    <attribute id="YSUPPLIER" order="38" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Global Supplier"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="YSUPPLIER"/>
+    </attribute>
+    <attribute id="YSUPPLIER__YCITY" order="39" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="City"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="YSUPPLIER__YCITY"/>
+    </attribute>
+    <attribute id="YSUPPLIER__YCOUNTRY" order="40" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Country"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="YSUPPLIER__YCOUNTRY"/>
+    </attribute>
+    <attribute id="YSUPPLIER__YSUPPLI_C" order="41" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Local Supplier Code"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="YSUPPLIER__YSUPPLI_C"/>
+    </attribute>
+    <attribute id="Y_INVOICE" order="42" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Invoice Number"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="Y_INVOICE"/>
+    </attribute>
+    <attribute id="Y_RUOM" order="43" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Unit of Measure Recounted"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="Y_RUOM"/>
+    </attribute>
+    <attribute id="Y_UOM" order="44" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Unit Of Measure"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="Y_UOM"/>
+    </attribute>
+    <attribute id="ZDEL_DATE" order="45" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Delivery Date"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="ZDEL_DATE"/>
+    </attribute>
+    <attribute id="ZINV_DATE" order="46" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Invoice Date"/>
+      <keyMapping columnObjectName="BwViewSynonym" columnName="ZINV_DATE"/>
+    </attribute></attributes>
+  <calculatedAttributes/>
+  <baseMeasures>
+    <measure id="1ROWCOUNT" order="3" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Number of Records"/>
+      <measureMapping columnObjectName="BwViewSynonym" columnName="1ROWCOUNT"/>
+    </measure>
+    <measure id="K_CAB_QTY" order="4" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Quantity Cabinets"/>
+      <measureMapping columnObjectName="BwViewSynonym" columnName="K_CAB_QTY"/>
+    </measure>
+    <measure id="K_DOORQTY" order="5" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Quantity doors"/>
+      <measureMapping columnObjectName="BwViewSynonym" columnName="K_DOORQTY"/>
+    </measure>
+    <measure id="K_GS_AMT" order="6" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Gross Sales Amount"/>
+      <measureMapping columnObjectName="BwViewSynonym" columnName="K_GS_AMT"/>
+    </measure>
+    <measure id="K_NS_AMT" order="8" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Net Sales Amount"/>
+      <measureMapping columnObjectName="BwViewSynonym" columnName="K_NS_AMT"/>
+    </measure>
+    <measure id="K_OC_AMT" order="11" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Other Cost Amount"/>
+      <measureMapping columnObjectName="BwViewSynonym" columnName="K_OC_AMT"/>
+    </measure>
+    <measure id="K_PC_AMT" order="13" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Product Cost Amount"/>
+      <measureMapping columnObjectName="BwViewSynonym" columnName="K_PC_AMT"/>
+    </measure>
+    <measure id="K_QUAN" order="17" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Quantity"/>
+      <measureMapping columnObjectName="BwViewSynonym" columnName="K_QUAN"/>
+    </measure>
+    <measure id="K_RE_QTY" order="18" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Quantity Recounted"/>
+      <measureMapping columnObjectName="BwViewSynonym" columnName="K_RE_QTY"/>
+    </measure>
+  </baseMeasures>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+  <localDimensions/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

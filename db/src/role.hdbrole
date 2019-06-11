@@ -1,0 +1,9 @@
+{
+	"role":{
+		"name": "Demo.db::role",
+		"schema_privileges": [{
+		   "privileges": ["SELECT"
+		   ]
+		}]
+    }
+}

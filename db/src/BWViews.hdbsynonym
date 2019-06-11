@@ -1,0 +1,8 @@
+{
+  "Demo.db::BwViewSynonym": {
+    "target": {
+      "object": "system-local.bw.bw2hana/CR_INV_SALES",
+      "schema": "_SYS_BIC"
+    }
+  }
+}
